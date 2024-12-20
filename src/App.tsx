@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className={'bg-amber-400 m-5'}>
           Project WDAI 2024/25
       </div>
     </>
