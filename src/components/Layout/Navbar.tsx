@@ -15,7 +15,8 @@ export default function Navbar() {
     });
 
     window.addEventListener('click', (e) => {
-        if (e.target?.id != 'dropdown-menu' && e.target?.parentElement?.id != 'hamburger-menu') {
+        const target = e.target as HTMLElement;
+        if (target.id != 'dropdown-menu' && target.parentElement?.id != 'hamburger-menu') {
             setIsMenuOpened(false);
         }
     })
