@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav {
+    border-bottom: 1px solid #878787;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
