@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import {BrowserRouter, Route, Routes} from "react-router";
 import Layout from "./Layout.tsx";
-import App from "./pages/HomePage.tsx";
+import Home from "./pages/Home.tsx";
 
 let root = ""
 // Uncomment this line to deploy to GitHub Pages
@@ -11,8 +11,8 @@ let root = ""
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
         <Routes>
-            <Route element={<Layout />} >
-                <Route path={'/' + root} element={<App/>}></Route>
+            <Route path={'/' + root} element={<Layout/>}>
+                <Route index element={<Home/>}/>
             </Route>
         </Routes>
     </BrowserRouter>
