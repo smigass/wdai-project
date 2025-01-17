@@ -5,6 +5,7 @@ import {IoSearch} from "react-icons/io5";
 
 interface props {
     openMenu: () => void
+    openSearch: () => void
 }
 
 const changeTheme = () => {
@@ -24,12 +25,12 @@ const changeTheme = () => {
     html.classList.add('dark');
 }
 
-export default function ExtraIcons({openMenu}: props) {
+export default function ExtraIcons({openMenu, openSearch}: props) {
     return (
-        <div className={'flex items-center gap-x-5 md:border-l pl-10 h-fit self-center'}>
+        <div className={'flex items-center gap-x-5 z-20 md:border-l pl-10 h-fit self-center'}>
             <div
                 className={'p-1 lg:hidden border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2'}>
-                <IoSearch size={18} color={'currentColor'}/>
+                <IoSearch onClick={() =>openSearch()} size={18} color={'currentColor'}/>
             </div>
             <LoginButton/>
             <div
