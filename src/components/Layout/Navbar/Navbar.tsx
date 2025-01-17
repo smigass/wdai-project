@@ -42,7 +42,7 @@ export default function Navbar() {
 
     const [isMenuOpened, setIsMenuOpened] = useState(false);
 
-    const [categories, setCategories] = useState<Category[]>(categories1);
+    const [categories] = useState<Category[]>(categories1);
 
 
 

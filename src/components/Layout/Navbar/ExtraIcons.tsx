@@ -1,7 +1,6 @@
 import HamburgerMenu from "./HamburgerMenu.tsx";
 import LoginButton from "./LoginButton.tsx";
 import {MdLightMode} from "react-icons/md";
-import {FaUserAlt} from "react-icons/fa";
 import {IoSearch} from "react-icons/io5";
 
 interface props {
