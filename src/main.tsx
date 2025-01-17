@@ -8,7 +8,7 @@ import Home from "./pages/Home.tsx";
 
 let root = ""
 // Uncomment this line to deploy to GitHub Pages
-//root = "wdai-project/"
+root = "wdai-project/"
 
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>

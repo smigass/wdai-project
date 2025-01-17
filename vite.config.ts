@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Uncomment this line to deploy to GitHub Pages
-  // base: "/wdai-project"
+  base: "/wdai-project"
 })
