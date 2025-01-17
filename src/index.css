@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .main-container {
+        @apply flex p-4 sm:px-8 md:px-12 lg:px-16 xl:px-20;
+    }
+    .container-flex {
+        @apply flex flex-col w-full justify-between items-center;
+    }
+    .container-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
 nav {
-    border-bottom: 1px solid #878787;
+    border-bottom: 1px solid #cacaca;
 }
 
 body {

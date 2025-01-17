@@ -1,6 +1,8 @@
 import HamburgerMenu from "./HamburgerMenu.tsx";
 import LoginButton from "./LoginButton.tsx";
 import {MdLightMode} from "react-icons/md";
+import {FaUserAlt} from "react-icons/fa";
+import {IoSearch} from "react-icons/io5";
 
 interface props {
     openMenu: () => void
@@ -26,13 +28,18 @@ const changeTheme = () => {
 export default function ExtraIcons({openMenu}: props) {
     return (
         <div className={'flex items-center gap-x-5 md:border-l pl-10 h-fit self-center'}>
-            <HamburgerMenu openMenu={openMenu}/>
+            <div
+                className={'p-1 lg:hidden border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2'}>
+                <IoSearch size={18} color={'currentColor'}/>
+            </div>
             <LoginButton/>
             <div
                 className={'h-fit p-1 border border-d-text-secondary rounded-md cursor-cell dark:text-d-text-primary'}
                 onClick={changeTheme}>
                 <MdLightMode size={18} color={'currentColor'}/>
             </div>
+            <HamburgerMenu openMenu={openMenu}/>
+
         </div>
     )
 }
