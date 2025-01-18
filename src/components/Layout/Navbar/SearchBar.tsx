@@ -7,15 +7,15 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({categories}: SearchBarProps) => {
-    const [category, setCategory] = useState<number>(-1);
+    // const [category, setCategory] = useState<number>(-1);
 
-    const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
-        const id = categories.filter(category => category.name === value)[0].id;
-        setCategory(id);
-    }
+    // const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     const value = e.target.value;
+    //     const id = categories.filter(category => category.name === value)[0].id;
+    //     setCategory(id);
+    // }
 
-    const [cat, setCat] = useState<Category[]>([{id: -1, name: 'All categories'}, ...categories]);
+    const [cat] = useState<Category[]>([{id: -1, name: 'All categories'}, ...categories]);
 
     const handleSearch = () => {
         const categoryName = (document.getElementById('searchSelect') as HTMLSelectElement).value;
