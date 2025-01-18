@@ -11,7 +11,7 @@ export default function ProductCard({product}: ProductCardProps){
     return (
         <div key={product.id} className={'product-card'}>
             <div className={'h-[60%] overflow-hidden p-3'}>
-                <img src={'/public/images/' +  product.imgsrc} alt={product.title}/>
+                <img src={'./images/' +  product.imgsrc} alt={product.title}/>
             </div>
             <div className={'flex justify-between flex-col h-[40%]'}>
                 <h3 className={'p-2 font-bold'}>{product.title.length > 50 ? product.title.slice(0,50) + '...' : product.title}</h3>
