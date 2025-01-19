@@ -1,11 +1,10 @@
 export default interface IProduct {
-    id: number
-    title: string
-    price: number
-    imgsrc: string
-    category_number: number
-    description: string
+    ProductID: number
+    Name: string
+    Price: number
+    Image: string
+    CategoryID: number
+    Description: string
     ratings: [{rating: number, comment: string}]
-    stock: number
-
+    InStock: number
 }
