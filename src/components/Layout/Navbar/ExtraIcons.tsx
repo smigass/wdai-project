@@ -31,7 +31,7 @@ export default function ExtraIcons({openMenu, openSearch}: props) {
     return (
         <div className={'flex items-center gap-x-5 z-20 md:border-l pl-10 h-fit self-center'}>
             <div
-                className={'p-1 border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2'}>
+                className={'p-1 hidden  border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary md:flex items-center gap-x-2'}>
                 <Link to={'/cart'}>
                     <RiShoppingCart2Fill size={18} color={'currentColor'}/>
                 </Link>

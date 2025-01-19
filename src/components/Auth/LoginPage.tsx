@@ -26,6 +26,8 @@ export default function LoginPage() {
                 const data = await response.json();
                 localStorage.setItem("token", data.token);
                 const token = localStorage.getItem('token');
+                console.log(localStorage.getItem('token'))
+                console.log(localStorage)
                 if (token) {
                     const decoded = jwtDecode(token);
                     if (Date.now() >= decoded.exp * 1000) {
@@ -39,7 +41,6 @@ export default function LoginPage() {
                     localStorage.removeItem('currentUser');
                 }
                 setUser({ email: data.email, userId: data.userId, role: data.role }); // Ustaw dane użytkownika
-                alert("Login successful!");
                 navigate("/"); // Przekierowanie na stronę główną
             } else if (response.status === 401) {
                 setError("Invalid email or password.");
@@ -54,21 +55,21 @@ export default function LoginPage() {
 
     return (
         <div className="flex justify-center items-center h-screen w-full">
-            <div className="p-6 max-w-md w-full bg-white shadow-md rounded">
+            <div className="p-6 max-w-md w-full dark:bg-gray-600 shadow-md rounded">
                 <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block w-full p-2 border mb-4 dark:text-black  rounded"
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block w-full p-2 border mb-4 dark:text-black  rounded"
                 />
                 <button
                     onClick={handleLogin}

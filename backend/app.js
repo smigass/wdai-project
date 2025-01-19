@@ -20,7 +20,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(cors({
   origin: '*', // Pozwól tylko dla określonej domeny
-  methods: ['GET', 'POST'], // Dozwolone metody HTTP
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Dozwolone metody HTTP
 }));
 
 
