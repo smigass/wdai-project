@@ -41,6 +41,22 @@ router.get('/', (req, res) => {
     });
 });
 
+// Pobierz bestsellery (najlepiej sprzedające się produkty)
+router.get('/bestsellers', (req, res) => {
+    db.all(
+        `SELECT *
+         FROM Products
+         ORDER BY OrdersCount DESC LIMIT 10;`,
+        [],
+        (err, products) => {
+            if (err) {
+                return res.status(500).send('Error fetching bestsellers.');
+            }
+            res.status(200).send(products);
+        }
+    );
+});
+
 router.get('/search', (req, res) => {
     const {query, category} = req.query;
     console.log(query, category);
@@ -146,20 +162,6 @@ router.get('/category/:categoryId', (req, res) => {
     });
 });
 
-// Pobierz bestsellery (najlepiej sprzedające się produkty)
-router.get('/bestsellers', (req, res) => {
-    db.all(
-        `SELECT *
-         FROM Products
-         ORDER BY OrdersCount DESC LIMIT 10;`,
-        [],
-        (err, products) => {
-            if (err) {
-                return res.status(500).send('Error fetching bestsellers.');
-            }
-            res.status(200).send(products);
-        }
-    );
-});
+
 
 export default router;

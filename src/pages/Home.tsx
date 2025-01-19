@@ -1,18 +1,42 @@
 import {useEffect, useState} from "react";
-import {getProducts} from "../../backend/Database/Products.ts";
 import ProductsInfo from "../interfaces/ProductsInfo.ts";
 import HomeSection from "../components/Home/HomeSection.tsx";
+import IProduct from "../interfaces/Product.ts";
 
 function Home() {
     const [products, setProducts] = useState<ProductsInfo>();
 
-    const fetchProducts = async () => {
-        const response = await getProducts()
-        setProducts(response)
-    }
 
     useEffect(() => {
-        fetchProducts()
+        let bestsellers: IProduct[] = []
+        fetch('http://localhost:3000/products/bestsellers')
+            .then(response => response.json())
+            .then(data => {
+                bestsellers = data
+                fetch('http://localhost:3000/products')
+                    .then(response => response.json())
+                    .then(data => {
+                        const newest: IProduct[] = []
+                        const featured: IProduct[] = []
+                        while (newest.length < 5) {
+                            const random = Math.floor(Math.random() * data.length)
+                            if (!newest.includes(data[random])) {
+                                newest.push(data[random])
+                            }
+                        }
+                        while (featured.length < 5) {
+                            const random = Math.floor(Math.random() * data.length)
+                            if (!featured.includes(data[random])) {
+                                featured.push(data[random])
+                            }
+                        }
+                        setProducts({
+                            bestsellers: bestsellers,
+                            newest: newest,
+                            featured: featured
+                        })
+                    })
+            })
     }, [])
 
     return (
