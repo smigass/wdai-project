@@ -7,6 +7,7 @@ interface HomeSectionProps {
 }
 
 export default function HomeSection({title, products}: HomeSectionProps) {
+    console.log(products)
     return (
         <div className={'container my-10 p-2 border-b-2'}>
             <h2 className={'text-2xl font-bold font-main'}>{title}</h2>
