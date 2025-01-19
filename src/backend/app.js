@@ -1,5 +1,4 @@
 import express from 'express';
-import { db } from './models/db.js';
 import importProducts from './utils/importProducts.js';
 import importCategories from './utils/importCategories.js';
 
@@ -27,8 +26,8 @@ app.use('/opinions', opinionsRoutes);
 app.use('/cart', cartRoutes);
 
 // Importowanie danych do bazy
-importCategories();
-importProducts();
+importProducts()
+importCategories()
 
 // Root route
 app.get('/', (req, res) => {

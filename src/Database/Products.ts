@@ -1,7 +1,7 @@
 import IProduct from "../interfaces/Product.ts";
 import ProductsInfo from "../interfaces/ProductsInfo.ts";
 
-const ProductList: IProduct[] = [
+export const ProductList: IProduct[] = [
     {
         "id": 1,
         "title": "Adidas torba sportowa tiro league duffel m 39 5 l hs9749 czarna",
