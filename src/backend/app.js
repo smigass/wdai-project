@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors'
 import importProducts from './utils/importProducts.js';
 import importCategories from './utils/importCategories.js';
+import cors from 'cors';
 
 import userRoutes from './routes/users.js';
 import productRoutes from './routes/products.js';
@@ -14,6 +15,11 @@ import categoriesRoutes from './routes/categories.js';
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors({
+  origin: 'http://localhost:5174', // Pozwól tylko dla określonej domeny
+  methods: ['GET', 'POST'], // Dozwolone metody HTTP
+}));
 
 // Middleware
 app.use(express.json());
