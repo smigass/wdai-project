@@ -48,7 +48,7 @@ db.serialize(() => {
     UserID INTEGER NOT NULL,
     ProductID INTEGER NOT NULL,
     Quantity INTEGER NOT NULL,
-    REIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
   );`);
 
