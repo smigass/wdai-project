@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 
 export default function LoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState<string | null>(null); // Przechowuje komunikat błędu
+    const [error, setError] = useState<string | null>(null);
     const navigate = useNavigate();
+    const { setUser } = useContext(UserContext); // Dostęp do funkcji setUser z kontekstu
 
     const handleLogin = async () => {
         setError(null); // Reset błędu na początku próby logowania
@@ -22,16 +24,17 @@ export default function LoginPage() {
             if (response.ok) {
                 const data = await response.json();
                 localStorage.setItem("token", data.token); // Zapis tokenu JWT
+                setUser({ email: data.email, userId: data.userId, role: data.role }); // Ustaw dane użytkownika
                 alert("Login successful!");
                 navigate("/"); // Przekierowanie na stronę główną
             } else if (response.status === 401) {
-                setError("Invalid email or password."); // Komunikat błędu przy złych danych
+                setError("Invalid email or password.");
             } else {
-                setError("An unexpected error occurred. Please try again."); // Inne błędy
+                setError("An unexpected error occurred.");
             }
         } catch (error) {
             console.error("Error logging in:", error);
-            setError("Unable to connect to the server. Please try again later."); // Problem z połączeniem
+            setError("Unable to connect to the server.");
         }
     };
 

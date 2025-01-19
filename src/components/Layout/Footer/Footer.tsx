@@ -3,6 +3,7 @@ import {BsFillHouseFill, BsFillPhoneFill} from "react-icons/bs";
 import {SiMaildotru} from "react-icons/si";
 import {FaFacebookF} from "react-icons/fa";
 import {AiOutlineSafetyCertificate} from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -35,6 +36,7 @@ export default function Footer() {
 
 
             <div className={'w-full border-r border-r-d-text-secondary md:w-[50%] px-6 my-6 flex flex-col justify-end'}>
+                
                 Zaufane oznaczenia zwiększające naszą wiarygodność:
                 <div className={'flex m-2 gap-x-2'}>
                     <AiOutlineSafetyCertificate size={20} color={'currentColor'} id={'phoneFoot'}/>
@@ -47,6 +49,16 @@ export default function Footer() {
                 <div className={'flex m-2 gap-x-2'}>
                     <AiOutlineSafetyCertificate size={20} color={'currentColor'} id={'phoneFoot'}/>
                     <p>Wyróżnienie “E-commerce Polska”</p>
+                </div>
+
+                {/* Link to the Newsletter */}
+                <div className="flex mt-4">
+                    <Link
+                        to="/newsletter"
+                        className="text-blue-500 hover:underline underline-offset-4"
+                    >
+                        Subscribe to our Newsletter
+                    </Link>
                 </div>
             </div>
         </footer>

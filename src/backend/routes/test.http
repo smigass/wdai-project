@@ -20,3 +20,16 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "password123"
 }
+
+
+
+
+### Pobierz listę subskrybentów newslettera
+GET http://localhost:3000/newsletter
+Authorization: Bearer <your-admin-token>
+
+
+
+
+PUT http://localhost:3000/users/promote/1
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoidGVzdEBleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM3MzEzNjE5LCJleHAiOjE3MzczMTcyMTl9.sN5hrU06bpx-COwMvKbs_m46WUfoqt9njefqhYt_g-E"
