@@ -1,27 +1,33 @@
 import { FaUserAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../../context/UserContext";
 
 export default function LoginButton() {
     const navigate = useNavigate();
-    const currentUser = JSON.parse(localStorage.getItem("currentUser") || "null");
+    const { user, setUser } = useContext(UserContext); // Pobierz stan użytkownika z UserContext
 
     const handleLogout = () => {
-        localStorage.removeItem("currentUser"); // Usunięcie statusu zalogowanego
+        localStorage.removeItem("currentUser");
+        localStorage.removeItem("token"); // Usuń token
+        setUser(null); // Zresetuj stan użytkownika
         alert("Logged out successfully!");
         navigate("/"); // Przekierowanie na stronę główną
     };
 
-    return currentUser ? (
+    return user ? (
         <div className="flex items-center gap-x-2">
-            <span>Welcome, {currentUser.firstName}!</span>
-            <button onClick={handleLogout} className="p-2 border rounded bg-red-500 text-white">
+            <button
+                onClick={handleLogout}
+                className="p-1 border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2"
+            >
                 Logout
             </button>
         </div>
     ) : (
         <button
             onClick={() => navigate("/login")}
-            className="p-2 border rounded flex items-center gap-x-2"
+            className="p-1 border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2"
         >
             <FaUserAlt size={18} />
             <span>Login</span>

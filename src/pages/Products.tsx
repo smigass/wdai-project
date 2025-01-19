@@ -1,4 +1,4 @@
-import {getProducts} from "../Database/Products.ts";
+import {getProducts} from "../../backend/Database/Products.ts";
 import {useEffect, useState} from "react";
 import IProduct from "../interfaces/Product.ts";
 
@@ -16,9 +16,9 @@ export default function Products() {
                 {products.map((product, i) => {
                     return (
                         <div key={i} className={'product-card'}>
-                            <img src={product.image} alt={product.name}/>
-                            <h2>{product.name}</h2>
-                            <p>{product.price}</p>
+                            <img src={product.Image} alt={product.Name}/>
+                            <h2>{product.Name}</h2>
+                            <p>{product.Price}</p>
                         </div>
                     )
                 })}

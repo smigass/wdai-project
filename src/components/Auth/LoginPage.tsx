@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+import {jwtDecode} from "jwt-decode";
 
 export default function LoginPage() {
     const [email, setEmail] = useState("");
@@ -23,7 +24,22 @@ export default function LoginPage() {
 
             if (response.ok) {
                 const data = await response.json();
-                localStorage.setItem("token", data.token); // Zapis tokenu JWT
+                localStorage.setItem("token", data.token);
+                const token = localStorage.getItem('token');
+                console.log(localStorage.getItem('token'))
+                console.log(localStorage)
+                if (token) {
+                    const decoded = jwtDecode(token);
+                    if (Date.now() >= decoded.exp * 1000) {
+                        localStorage.removeItem('token');
+                        localStorage.removeItem('currentUser');
+                    }
+                    localStorage.setItem('currentUser', JSON.stringify(decoded));
+                    console.log('decoded');
+                    console.log(decoded);
+                } else{
+                    localStorage.removeItem('currentUser');
+                }
                 setUser({ email: data.email, userId: data.userId, role: data.role }); // Ustaw dane użytkownika
                 alert("Login successful!");
                 navigate("/"); // Przekierowanie na stronę główną

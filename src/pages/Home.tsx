@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {getProducts} from "../Database/Products.ts";
+import {getProducts} from "../../backend/Database/Products.ts";
 import ProductsInfo from "../interfaces/ProductsInfo.ts";
 import HomeSection from "../components/Home/HomeSection.tsx";
 
