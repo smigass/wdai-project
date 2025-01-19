@@ -5,7 +5,7 @@ export default interface IProduct {
     imgsrc: string
     category_number: number
     description: string
-    ratings: []
+    ratings: [{rating: number, comment: string}]
     stock: number
 
 }
