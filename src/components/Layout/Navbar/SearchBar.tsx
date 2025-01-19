@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Category from "../../../interfaces/Category.ts";
 import {CiSearch} from "react-icons/ci";
 import {useNavigate} from "react-router";
@@ -8,21 +7,13 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({categories}: SearchBarProps) => {
-    // const [category, setCategory] = useState<number>(-1);
-
-    // const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //     const value = e.target.value;
-    //     const id = categories.filter(category => category.name === value)[0].id;
-    //     setCategory(id);
-    // }
     const navigate = useNavigate()
 
-    const [cat] = useState<Category[]>([{id: -1, name: 'All categories'}, ...categories]);
 
     const handleSearch = () => {
         const categoryName = (document.getElementById('searchSelect') as HTMLSelectElement).value;
-        const category = cat.filter(category => category.name === categoryName)[0];
-        navigate('/search?category=' + category.id + '&search=' + (document.getElementById('searchProduct') as HTMLInputElement).value)
+        const category = [{CategoryID: -1, Name: 'All categories'},...categories].filter(category => category.Name === categoryName)[0];
+        navigate('/search?category=' + category.CategoryID + '&search=' + (document.getElementById('searchProduct') as HTMLInputElement).value)
     }
 
     return (
@@ -34,9 +25,9 @@ const SearchBar = ({categories}: SearchBarProps) => {
                 <CiSearch size={20}/>
             </div>
             <select name={'categories'} id={'searchSelect'} className={'w-[30%] bg-gray-300/30  pl-2 h-10 rounded-r-3xl'}>
-                {cat.map((category, index) => (
-                    <option key={index} value={category.name}>{category.name}</option>
-                ))}
+                {[{CategoryID: -1, Name: 'All categories'},...categories].map((category, index) => {
+                    return <option key={index} value={category.Name}>{category.Name}</option>
+                })}
             </select>
         </div>
     );

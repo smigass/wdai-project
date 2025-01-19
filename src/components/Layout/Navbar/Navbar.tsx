@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Logo from "./Logo.tsx";
 import InlineMenu from "./InlineMenu.tsx";
 import DropdownMenu from "./DropdownMenu.tsx";
@@ -8,42 +8,20 @@ import LowerNav from "./LowerNav.tsx";
 import Category from "../../../interfaces/Category.ts";
 import SearchMobile from "./SearchMobile.tsx";
 
-const categories1: Category[] = [
-    {
-        id: 1,
-        name: 'Category 1'
-    },
-    {
-        id: 2,
-        name: 'Category 2'
-    },
-    {
-        id: 3,
-        name: 'Category 3'
-    },
-    {
-        id: 4,
-        name: 'Category 4'
-    },
-    {
-        id: 5,
-        name: 'Category 5'
-    },
-    {
-        id: 6,
-        name: 'Category 6'
-    },
-    {
-        id: 7,
-        name: 'Category 7'
-    },
-]
-
 export default function Navbar() {
 
     const [isMenuOpened, setIsMenuOpened] = useState(false);
     const [isSearchOpened, setIsSearchOpened] = useState(false);
-    const [categories] = useState<Category[]>(categories1);
+    const [categories, setCategories] = useState<Category[]>([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/categories')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                setCategories(data)
+            })
+    }, []);
 
 
     window.addEventListener('resize', () => {
@@ -64,11 +42,6 @@ export default function Navbar() {
     const openSearch = () => {
         setIsSearchOpened(prevState => !prevState);
     }
-
-
-
-
-
 
     return (
         <header className={'w-full relative'}>

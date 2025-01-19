@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors'
 import importProducts from './utils/importProducts.js';
 import importCategories from './utils/importCategories.js';
 import cors from 'cors';
@@ -10,6 +11,7 @@ import adminRoutes from './routes/admin.js';
 import newsletterRoutes from './routes/newsletter.js';
 import opinionsRoutes from './routes/opinions.js';
 import cartRoutes from './routes/cart.js';
+import categoriesRoutes from './routes/categories.js';
 
 const app = express();
 const PORT = 3000;
@@ -21,6 +23,11 @@ app.use(cors({
 
 // Middleware
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:5173', // Pozwól tylko dla określonej domeny
+  methods: ['GET', 'POST'], // Dozwolone metody HTTP
+}));
+
 
 // Routes
 app.use('/users', userRoutes);
@@ -30,6 +37,7 @@ app.use('/admin', adminRoutes);
 app.use('/newsletter', newsletterRoutes);
 app.use('/opinions', opinionsRoutes);
 app.use('/cart', cartRoutes);
+app.use('/categories', categoriesRoutes);
 
 // Importowanie danych do bazy
 importProducts()
