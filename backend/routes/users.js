@@ -9,25 +9,33 @@ const SECRET_KEY = 'your_secret_key';
 
 // Rejestracja użytkownika
 router.post('/register', async (req, res) => {
-  const { email, password, firstName, lastName, address, phone } = req.body;
+    const { email, password, firstName, lastName, address, phone } = req.body;
 
-  if (!email || !password || !firstName || !lastName) {
-    return res.status(400).send('All required fields must be provided.');
-  }
-
-  const hashedPassword = await bcrypt.hash(password, 10);
-
-  db.run(
-    `INSERT INTO Users (Email, Password, FirstName, LastName, Address, Phone) VALUES (?, ?, ?, ?, ?, ?);`,
-    [email, hashedPassword, firstName, lastName, address || '', phone || ''],
-    function (err) {
-      if (err) {
-        return res.status(500).send('Error registering user.');
-      }
-      res.status(201).send({ userId: this.lastID });
+    if (!email || !password || !firstName || !lastName) {
+        return res.status(400).send('All required fields must be provided.');
     }
-  );
+
+    try {
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        db.run(
+            `INSERT INTO Users (Email, Password, FirstName, LastName, Address, Phone) VALUES (?, ?, ?, ?, ?, ?);`,
+            [email, hashedPassword, firstName, lastName, address || '', phone || ''],
+            function (err) {
+                if (err) {
+                    if (err.message.includes('UNIQUE constraint failed')) {
+                        return res.status(409).send('Email already exists.');
+                    }
+                    return res.status(500).send('Error registering user: ' + err.message);
+                }
+                res.status(201).send({ userId: this.lastID });
+            }
+        );
+    } catch (error) {
+        res.status(500).send('Error hashing password: ' + error.message);
+    }
 });
+
 
 // Logowanie użytkownika
 router.post('/login', (req, res) => {
