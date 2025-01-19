@@ -54,7 +54,7 @@ db.serialize(() => {
     OpinionID INTEGER PRIMARY KEY AUTOINCREMENT,
     UserID INTEGER NOT NULL,
     ProductID INTEGER NOT NULL,
-    Rating INTEGER NOT NULL,
+    Rating DECIMAL(10,2) NOT NULL,
     Body TEXT
   );`);
 
