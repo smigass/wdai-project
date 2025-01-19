@@ -47,14 +47,16 @@ db.serialize(() => {
     CartID INTEGER PRIMARY KEY AUTOINCREMENT,
     UserID INTEGER NOT NULL,
     ProductID INTEGER NOT NULL,
-    Quantity INTEGER NOT NULL
+    Quantity INTEGER NOT NULL,
+    REIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
   );`);
 
   db.run(`CREATE TABLE IF NOT EXISTS Opinions (
     OpinionID INTEGER PRIMARY KEY AUTOINCREMENT,
     UserID INTEGER NOT NULL,
     ProductID INTEGER NOT NULL,
-    Rating INTEGER NOT NULL,
+    Rating DECIMAL(10,2) NOT NULL,
     Body TEXT
   );`);
 

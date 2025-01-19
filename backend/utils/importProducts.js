@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import {db} from '../models/db.js';
-import * as data from '../../Database/productList.json' with {type: "json"}
+import * as data from '../Database/productList.json' with {type: "json"}
 
 const importProducts = async () => {
     let productList = data.default

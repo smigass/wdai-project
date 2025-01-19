@@ -12,6 +12,10 @@ router.post('/', authenticateJWT, (req, res) => {
     return res.status(400).send('Product ID and rating are required.');
   }
 
+  if (rating && (rating < 0 || rating > 5)) {
+    return res.status(400).send('Rating must be between 0 and 5.');
+  }
+
   db.run(
     `INSERT INTO Opinions (UserID, ProductID, Rating, Body) VALUES (?, ?, ?, ?);`,
     [req.user.userId, productId, rating, body || ''],
@@ -59,6 +63,10 @@ router.put('/:opinionId', authenticateJWT, (req, res) => {
   if (body) {
     updates.push('Body = ?');
     params.push(body);
+  }
+
+  if (rating && (rating < 0 || rating > 5)) {
+    return res.status(400).send('Rating must be between 0 and 5.');
   }
 
   params.push(req.params.opinionId, req.user.userId);

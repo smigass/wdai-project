@@ -85,4 +85,30 @@ router.put('/:cartId', authenticateJWT, (req, res) => {
   );
 });
 
+// Pobranie całkowitej ceny koszyka dla użytkownika
+router.get('/total/:userId', (req, res) => {
+  const userId = req.params.userId;
+
+  const query = `
+      SELECT SUM(p.Price * c.Quantity) AS TotalPrice
+      FROM Carts c
+      JOIN Products p ON c.ProductID = p.ProductID
+      WHERE c.UserID = ?;
+  `;
+
+  db.get(query, [userId], (err, row) => {
+      if (err) {
+          console.error('Error fetching cart total:', err.message);
+          return res.status(500).json({ error: 'Internal Server Error' });
+      }
+
+      // Jeśli użytkownik nie ma produktów w koszyku, zwróć 0
+      if (!row || row.TotalPrice === null) {
+          return res.json({ total: 0 });
+      }
+
+      res.json({ total: row.TotalPrice });
+  });
+});
+
 export default router;

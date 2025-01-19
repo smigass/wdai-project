@@ -10,11 +10,11 @@ import adminRoutes from './routes/admin.js';
 import newsletterRoutes from './routes/newsletter.js';
 import opinionsRoutes from './routes/opinions.js';
 import cartRoutes from './routes/cart.js';
+import imageRoutes from './routes/images.js';
 import categoriesRoutes from './routes/categories.js';
 
 const app = express();
 const PORT = 3000;
-
 
 // Middleware
 app.use(express.json());
@@ -32,7 +32,8 @@ app.use('/admin', adminRoutes);
 app.use('/newsletter', newsletterRoutes);
 app.use('/opinions', opinionsRoutes);
 app.use('/cart', cartRoutes);
-app.use('/categories', categoriesRoutes);
+app.use('/categories', categoriesRoutes)
+app.use('/images', imageRoutes);
 
 // Importowanie danych do bazy
 importProducts()
