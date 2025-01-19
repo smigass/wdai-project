@@ -34,7 +34,6 @@ router.get('/', (req, res) => {
     }
 
     db.all(query, params, (err, products) => {
-        products = products.map(product => ({...product, Image: 'http://localhost:3000/' + product.Image}));
         if (err) {
             return res.status(500).send('Error fetching products.');
         }
