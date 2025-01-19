@@ -6,6 +6,7 @@ import ExtraIcons from "./ExtraIcons.tsx";
 import SearchBar from "./SearchBar.tsx";
 import LowerNav from "./LowerNav.tsx";
 import Category from "../../../interfaces/Category.ts";
+import SearchMobile from "./SearchMobile.tsx";
 
 const categories1: Category[] = [
     {
@@ -41,15 +42,15 @@ const categories1: Category[] = [
 export default function Navbar() {
 
     const [isMenuOpened, setIsMenuOpened] = useState(false);
-
-    const [categories, setCategories] = useState<Category[]>(categories1);
-
+    const [isSearchOpened, setIsSearchOpened] = useState(false);
+    const [categories] = useState<Category[]>(categories1);
 
 
     window.addEventListener('resize', () => {
         const width = window.innerWidth;
         if (width > 768) {
             setIsMenuOpened(false);
+            setIsSearchOpened(false);
         }
     });
 
@@ -59,6 +60,15 @@ export default function Navbar() {
             setIsMenuOpened(false);
         }
     })
+
+    const openSearch = () => {
+        setIsSearchOpened(prevState => !prevState);
+    }
+
+
+
+
+
 
     return (
         <header className={'w-full relative'}>
@@ -70,12 +80,13 @@ export default function Navbar() {
                 </div>
                 <SearchBar categories={categories}/>
 
+                <SearchMobile categories={categories} opened={isSearchOpened}/>
                 {/*Right side of navbar*/}
                 <div className={'flex gap-x-12'}>
                     <InlineMenu/>
 
                     {isMenuOpened ? <DropdownMenu/> : <></>}
-                    <ExtraIcons openMenu={() => setIsMenuOpened(!isMenuOpened)}/>
+                    <ExtraIcons openMenu={() => setIsMenuOpened(!isMenuOpened)} openSearch={openSearch}/>
                 </div>
             </nav>
             <LowerNav categories={categories}/>

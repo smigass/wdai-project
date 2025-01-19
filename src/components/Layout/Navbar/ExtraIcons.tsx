@@ -1,11 +1,13 @@
 import HamburgerMenu from "./HamburgerMenu.tsx";
 import LoginButton from "./LoginButton.tsx";
 import {MdLightMode} from "react-icons/md";
-import {FaUserAlt} from "react-icons/fa";
 import {IoSearch} from "react-icons/io5";
+import {RiShoppingCart2Fill} from "react-icons/ri";
+import {Link} from "react-router";
 
 interface props {
     openMenu: () => void
+    openSearch: () => void
 }
 
 const changeTheme = () => {
@@ -25,12 +27,20 @@ const changeTheme = () => {
     html.classList.add('dark');
 }
 
-export default function ExtraIcons({openMenu}: props) {
+export default function ExtraIcons({openMenu, openSearch}: props) {
     return (
-        <div className={'flex items-center gap-x-5 md:border-l pl-10 h-fit self-center'}>
+        <div className={'flex items-center gap-x-5 z-20 md:border-l pl-10 h-fit self-center'}>
+            <div
+                className={'p-1 border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2'}>
+                <Link to={'/cart'}>
+                    <RiShoppingCart2Fill size={18} color={'currentColor'}/>
+                </Link>
+
+            </div>
+
             <div
                 className={'p-1 lg:hidden border border-d-text-secondary text-sm rounded-md dark:text-d-text-primary flex items-center gap-x-2'}>
-                <IoSearch size={18} color={'currentColor'}/>
+                <IoSearch onClick={() =>openSearch()} size={18} color={'currentColor'}/>
             </div>
             <LoginButton/>
             <div

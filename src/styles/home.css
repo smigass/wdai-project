@@ -1,9 +1,9 @@
 .product-card {
-    @apply w-[15rem] h-[20rem] m-3 border border-gray-300 rounded-lg shadow-md flex flex-col;
+    @apply w-[15rem] h-[20rem] m-3 border border-gray-100 rounded-lg shadow-md flex flex-col dark:border-gray-500;
 }
 
 .product-card-container {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4;
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4;
 
 }
 
