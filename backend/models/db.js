@@ -43,12 +43,21 @@ db.serialize(() => {
     OrderDate TEXT NOT NULL
   );`);
 
+  db.run(`CREATE TABLE IF NOT EXISTS OrderDetails (
+    OrderDetailID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OrderID INTEGER NOT NULL,
+    ProductID INTEGER NOT NULL,
+    Quantity INTEGER NOT NULL,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);`);
+
   db.run(`CREATE TABLE IF NOT EXISTS Carts (
     CartID INTEGER PRIMARY KEY AUTOINCREMENT,
     UserID INTEGER NOT NULL,
     ProductID INTEGER NOT NULL,
     Quantity INTEGER NOT NULL,
-    REIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
   );`);
 

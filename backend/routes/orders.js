@@ -96,4 +96,48 @@ router.put('/:orderId', authenticateJWT, (req, res) => {
   );
 });
 
+//Dodanie szczegółów zamówienia
+router.post('/details', authenticateJWT, (req, res) => {
+  const { orderId, productId, quantity } = req.body;
+
+  if (!orderId || !productId || !quantity) {
+      return res.status(400).json({ error: 'All fields are required' });
+  }
+
+  const query = `INSERT INTO OrderDetails (OrderID, ProductID, Quantity) VALUES (?, ?, ?)`;
+
+  db.run(query, [orderId, productId, quantity], function (err) {
+      if (err) {
+          return res.status(500).json({ error: 'Database error' });
+      }
+      res.status(201).send('Order detail added successfully');
+  });
+});
+
+//Pobranie szczegółów zamówienia
+router.get('/details/:orderId', authenticateJWT, (req, res) => {
+  const { orderId } = req.params;
+
+  const query = `
+      SELECT DISTINCT p.Name, p.Price, od.Quantity 
+      FROM OrderDetails od
+      JOIN Products p ON od.ProductID = p.ProductID
+      WHERE od.OrderID = ?;
+  `;
+
+  db.all(query, [orderId], (err, rows) => {
+      if (err) {
+          return res.status(500).json({ error: 'Database error' });
+      }
+
+      if (rows.length === 0) {
+          return res.status(404).json({ message: 'No order details found' });
+      }
+
+      res.status(200).json(rows);
+  });
+});
+
+
+
 export default router;
