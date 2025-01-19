@@ -6,15 +6,15 @@ export default function LoginButton() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser") || "null");
 
     const handleLogout = () => {
-        localStorage.removeItem("currentUser"); // Usunięcie statusu zalogowanego
+        localStorage.removeItem("currentUser");
+        localStorage.removeItem("token")// Usunięcie statusu zalogowanego
         alert("Logged out successfully!");
         navigate("/"); // Przekierowanie na stronę główną
     };
 
     return currentUser ? (
         <div className="flex items-center gap-x-2">
-            <span>Welcome, {currentUser.firstName}!</span>
-            <button onClick={handleLogout} className="p-2 border rounded bg-red-500 text-white">
+            <button onClick={handleLogout} className="p-1 border rounded">
                 Logout
             </button>
         </div>

@@ -3,9 +3,21 @@ import {BsFillHouseFill, BsFillPhoneFill} from "react-icons/bs";
 import {SiMaildotru} from "react-icons/si";
 import {FaFacebookF} from "react-icons/fa";
 import {AiOutlineSafetyCertificate} from "react-icons/ai";
-import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export default function Footer() {
+
+    const navigate = useNavigate();
+
+    function handleNewsletter() {
+        if (localStorage.getItem('currentUser') !== null) {
+            navigate('/newsletter')
+        }
+        else {
+            navigate('/login')
+        }
+    }
+
     return (
         <footer className={'w-full border-t border-t-d-text-secondary flex flex-col sm:flex-row'}>
             {/*Left side of the footer*/}
@@ -53,12 +65,9 @@ export default function Footer() {
 
                 {/* Link to the Newsletter */}
                 <div className="flex mt-4">
-                    <Link
-                        to="/newsletter"
-                        className="text-blue-500 hover:underline underline-offset-4"
-                    >
+                    <a className="text-blue-500 hover:underline underline-offset-4" onClick={handleNewsletter}>
                         Subscribe to our Newsletter
-                    </Link>
+                    </a>
                 </div>
             </div>
         </footer>
