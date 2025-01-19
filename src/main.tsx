@@ -13,6 +13,7 @@ import LoginPage from "./components/Auth/LoginPage.tsx";
 import RegisterPage from "./components/Auth/RegisterPage.tsx";
 import NewsletterPage from "./components/Newsletter/NewsletterPage.tsx";
 import { UserProvider } from "./context/UserContext.tsx";
+import AccountPage from "./pages/AccountPage.tsx";
 
 let root = "";
 // Uncomment this line to deploy to GitHub Pages
@@ -34,6 +35,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="/newsletter" element={<NewsletterPage />} />
+          <Route path={'account'} element={<AccountPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

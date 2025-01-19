@@ -4,6 +4,23 @@ import { authenticateJWT, authorizeAdmin } from '../middleware/auth.js';
 
 const router = express.Router();
 
+
+router.get('/check', authenticateJWT, (req, res) => {
+  db.get(
+      `SELECT * FROM Newsletter WHERE UserID = ?;`,
+      [req.user.userId],
+      (err, row) => {
+        if (err) {
+          return res.status(500).send('Error checking subscription.');
+        }
+        if (row) {
+          return res.status(200).send({ subscribed: true });
+        }
+        res.status(200).send({ subscribed: false });
+      }
+  );
+});
+
 // Zapisz użytkownika do newslettera
 router.post('/', authenticateJWT, (req, res) => {
   db.run(`INSERT OR IGNORE INTO Newsletter (UserID) VALUES (?);`, [req.user.userId], (err) => {
@@ -31,17 +48,21 @@ router.get('/', authenticateJWT, authorizeAdmin, (req, res) => {
 
 // Usuń użytkownika z newslettera
 router.delete('/', authenticateJWT, (req, res) => {
-  db.run(`DELETE FROM Newsletter WHERE UserID = ?;`, [req.user.userId], function (err) {
-    if (err) {
-      return res.status(500).send('Error unsubscribing from newsletter.');
-    }
+  db.run(
+      `DELETE FROM Newsletter WHERE UserID = ?;`,
+      [req.user.userId],
+      function (err) {
+        if (err) {
+          return res.status(500).send('Error unsubscribing from newsletter.');
+        }
 
-    if (this.changes === 0) {
-      return res.status(404).send('You are not subscribed to the newsletter.');
-    }
+        if (this.changes === 0) {
+          return res.status(404).send('You are not subscribed to the newsletter.');
+        }
 
-    res.status(200).send('Unsubscribed from newsletter successfully.');
-  });
+        res.status(200).send('Unsubscribed from newsletter successfully.');
+      }
+  );
 });
 
 export default router;

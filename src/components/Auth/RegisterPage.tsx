@@ -62,7 +62,7 @@ export default function RegisterPage() {
 
     return (
         <div className="flex justify-center items-center h-screen w-full">
-            <div className="p-6 max-w-md w-full bg-white shadow-md rounded">
+            <div className="p-6 max-w-md w-full dark:bg-gray-700 shadow-md rounded">
                 <h1 className="text-2xl font-bold mb-6 text-center">Register</h1>
                 <input
                     type="email"
@@ -70,7 +70,7 @@ export default function RegisterPage() {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <input
                     type="password"
@@ -78,7 +78,7 @@ export default function RegisterPage() {
                     placeholder="Password"
                     value={formData.password}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <input
                     type="text"
@@ -86,7 +86,7 @@ export default function RegisterPage() {
                     placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <input
                     type="text"
@@ -94,7 +94,7 @@ export default function RegisterPage() {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <input
                     type="text"
@@ -102,7 +102,7 @@ export default function RegisterPage() {
                     placeholder="Address"
                     value={formData.address}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <input
                     type="text"
@@ -110,11 +110,11 @@ export default function RegisterPage() {
                     placeholder="Phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="block w-full p-2 border mb-4 rounded"
+                    className="block bg-gray-200/80 dark:bg-gray-100 w-full p-2 border mb-4 rounded"
                 />
                 <button
                     onClick={handleRegister}
-                    className="bg-blue-500 text-white px-4 py-2 w-full rounded"
+                    className="bg-blue-500  px-4 py-2 w-full rounded"
                 >
                     Register
                 </button>
