@@ -1,27 +1,21 @@
-import {getProducts} from "../../backend/Database/Products.ts";
 import {useEffect, useState} from "react";
 import IProduct from "../interfaces/Product.ts";
+import ProductList from "../components/Search/ProductList.tsx";
 
 export default function Products() {
     const [products, setProducts] = useState<IProduct[]>([])
     useEffect(() => {
-        getProducts().then((response) => {
-            setProducts([...response.newest, ...response.popular, ...response.best_sellers])
-        })
+        fetch('http://localhost:3000/products')
+            .then(response => response.json())
+            .then(data => {
+                setProducts(data)
+            })
     }, []);
     return (
-        <div>
-            <h1 className={'font-bold text-3xl'}>All products</h1>
-            <div className={'flex'}>
-                {products.map((product, i) => {
-                    return (
-                        <div key={i} className={'product-card'}>
-                            <img src={product.Image} alt={product.Name}/>
-                            <h2>{product.Name}</h2>
-                            <p>{product.Price}</p>
-                        </div>
-                    )
-                })}
+        <div className={'main-container flex flex-col w-full'}>
+            <div className={'mb-10'}>
+                <h1 className={'font-bold text-lg md:text-2xl'}>All products!</h1>
+            <ProductList products={products}/>
             </div>
         </div>
     )
