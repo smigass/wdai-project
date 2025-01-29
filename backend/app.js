@@ -36,8 +36,8 @@ app.use('/categories', categoriesRoutes)
 app.use('/images', imageRoutes);
 
 // Importowanie danych do bazy
-importProducts()
-importCategories()
+// importProducts()
+// importCategories()
 
 // Root route
 app.get('/', (req, res) => {

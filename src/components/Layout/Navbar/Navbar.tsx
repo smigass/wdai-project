@@ -45,7 +45,7 @@ export default function Navbar() {
                     <Logo />
                 </div>
                 <SearchBar categories={categories} />
-                <SearchMobile categories={categories} opened={isSearchOpened} />
+                <SearchMobile categories={categories} opened={isSearchOpened} switchOpen={openSearch}/>
                 {/* Right side */}
                 <div className="flex items-center gap-x-5 z-20  pl-10 h-fit self-center">
                     <InlineMenu />

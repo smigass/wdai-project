@@ -5,12 +5,15 @@ import {useEffect, useState} from "react";
 import IProduct from "../interfaces/Product.ts";
 import {useNavigate, useParams} from "react-router";
 import Rating from "../interfaces/Rating.ts";
+import Stars from "../components/Product/Stars.tsx";
+import * as React from "react";
 
 
 export default function ProductInfo() {
     const [product, setProduct] = useState<IProduct>({} as IProduct)
     const [ratings, setRatings] = useState<Rating[]>([])
     const [loadingProduct, setLoading] = useState(true)
+    const [rating, setRating] = useState(0)
     const params = useParams()
     const navigate = useNavigate()
 
@@ -28,6 +31,7 @@ export default function ProductInfo() {
             })
     }, []);
 
+
     function handleCart() {
         const productID = product.ProductID
         fetch('http://localhost:3000/cart', {
@@ -42,9 +46,6 @@ export default function ProductInfo() {
             })
         })
             .then(res => {
-                if (!res.ok) {
-                    console.log(res)
-                }
                 res.json()
             })
             .then(data => {
@@ -52,14 +53,26 @@ export default function ProductInfo() {
             })
     }
 
-    const handleRatingRemoval = (e) => {
-        const id = e.target.parentElement.id == undefined ? e.target.id : e.target.parentElement.id
-        console.log(id)
+    const handleRatingRemoval = (e: React.MouseEvent) => {
+        const opinionID = e.currentTarget.id
+        fetch(`http://localhost:3000/opinions/${opinionID}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            },
+            }
+        ).then(r => {
+            if (r.ok) {
+                setRatings(ratings.filter(rating => rating.OpinionID.toString() != opinionID))
+            }
+            else {
+                alert('You are not authorized to delete this comment')
+            }
+        })
     }
 
     function addComment() {
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-expect-error
         const comment = document.querySelector('textarea').value
         fetch('http://localhost:3000/opinions', {
             method: 'POST',
@@ -68,17 +81,23 @@ export default function ProductInfo() {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`
             },
             body: JSON.stringify({
-                text: comment,
-                productID: params.id,
+                body: comment,
+                productId: params.id,
+                rating: rating
             })
         }).then(r => {
             r.json()
-            if (!r.ok){
+            if (!r.ok) {
+                console.log(r)
                 navigate('/login')
             }
         })
-            .then(data => {
-                console.log(data)
+            .then(() => {
+                fetch('http://localhost:3000/opinions/' + params.id)
+                    .then(response => response.json())
+                    .then(data => {
+                        setRatings(data)
+                    })
             })
     }
 
@@ -92,7 +111,7 @@ export default function ProductInfo() {
                     <div className={'border-2 p-4'}>
                         <img src={product.Image} alt={product.Name}/>
                     </div>
-                    <div className={' min-w-[40%] flex flex-col gap-y-10'}>
+                    <div className={'lg:ml-6 min-w-[40%] flex flex-col gap-y-10'}>
                         <div>
                             <p className={'text-xl font-main font-bold'}>Price: {product.Price}zł</p>
                         </div>
@@ -103,7 +122,8 @@ export default function ProductInfo() {
                             <p className={'text-xl font-main font-bold'}>In stock: {product.InStock}</p>
                         </div>
                         <div className={'flex justify-between'}>
-                            <button id={product.ProductID.toString()} onClick={handleCart} className={'bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded'}>
+                            <button id={product.ProductID.toString()} onClick={handleCart}
+                                    className={'bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded'}>
                                 Add to cart
                             </button>
                         </div>
@@ -116,8 +136,9 @@ export default function ProductInfo() {
                             <div key={index} className={'border-2 p-4 my-4'}>
                                 <div className={'flex justify-between'}>
                                     <p>{rating.Body}</p>
-                                    <button id={rating.OpinionID.toString()} className={'z-100'} onClick={handleRatingRemoval}>
-                                        <IoMdClose className={'z-0'} size={22}/>
+                                    <button className={'z-100'}>
+                                        <IoMdClose id={rating.OpinionID.toString()} onClick={handleRatingRemoval}
+                                                   className={'z-0'} size={22}/>
                                     </button>
                                 </div>
 
@@ -125,9 +146,11 @@ export default function ProductInfo() {
                                 <div className={'flex justify-between'}>
                                     <div className={'flex'}>
                                         {[...Array(5)].map((_, i) => {
-                                            return i + 1 <= rating.Rating ? <FaStar key={i} size={20} color={'gold'}/> : Math.abs(rating.Rating - i + 1) > 0.5 ? <FaStarHalfStroke key={i} color={'gold'} size={20}/> : <FaRegStar key={i} color={'gold'} size={20}/>
-                                        })
-                                        }
+                                            return i + 1 <= rating.Rating ?
+                                                <FaStar key={i} size={20} color={'gold'}/> : rating.Rating - i == 0.5 ?
+                                                    <FaStarHalfStroke key={i} color={'gold'} size={20}/> :
+                                                    <FaRegStar key={i} color={'gold'} size={20}/>
+                                        })}
                                     </div>
                                     <p>{rating.FirstName} {rating.LastName}</p>
                                 </div>
@@ -140,7 +163,9 @@ export default function ProductInfo() {
                     <h1 className={'font-bold text-2xl mb-8'}>Leave a comment</h1>
                     <textarea className={'border rounded-2xl w-full p-5'}>
                 </textarea>
-                    <button onClick={addComment} className={'bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mt-4'}>
+                    <Stars rating={rating} setRating={setRating}/>
+                    <button onClick={addComment}
+                            className={'bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mt-4'}>
                         Submit comment
                     </button>
                 </div>

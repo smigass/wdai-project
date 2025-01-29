@@ -14,7 +14,7 @@ export default function Cart() {
     const [hooker, setHooker] = useState(0);
 
     useEffect(() => {
-        if (!user.user) {
+        if (!user) {
             navigate('/login');
             return
         }
@@ -50,8 +50,7 @@ export default function Cart() {
             <ProductCartList hooker={handleHooker}/>
             {isEmpty ? <></> : (
                 <div className={'w-full flex items-center flex-col'}>
-                    <button className={'mt-10 p-3 w-[50%] bg-red-400 rounded-2xl'}>Order</button>
-
+                    <button onClick={() => navigate('/order')} className={'mt-10 p-3 w-[50%] bg-red-400 rounded-2xl'}>Order</button>
                 </div>
             )}
         </div>

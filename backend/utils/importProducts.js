@@ -3,8 +3,6 @@ import * as data from '../Database/productList.json' with {type: "json"}
 
 const importProducts = async () => {
     let productList = data.default
-    console.log(productList)
-    let imported = false;
     db.all(
         `SELECT * FROM Products;`,
         [],
@@ -15,19 +13,10 @@ const importProducts = async () => {
             }
             if (products.length > 0) {
                 console.log('Products alreadydasdsadas imported.');
-                imported = true
             }
         }
     )
-    console.log(imported)
-    if (imported) {
-        console.log('Products already imported.');
-        return 0;
-    }
     db.serialize(() => {
-        if (imported) {
-            return
-        }
         const stmt = db.prepare(`
             INSERT INTO Products (Name, Description, Price, Image, InStock, CategoryID, OrdersCount)
             VALUES (?, ?, ?, ?, ?, ?, ?);

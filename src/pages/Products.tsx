@@ -14,7 +14,7 @@ export default function Products() {
     return (
         <div className={'main-container flex flex-col w-full'}>
             <div className={'mb-10'}>
-                <h1 className={'font-bold text-lg md:text-2xl'}>All products!</h1>
+                <h1 className={'font-bold text-lg md:text-2xl mb-5'}>All products!</h1>
             <ProductList products={products}/>
             </div>
         </div>
