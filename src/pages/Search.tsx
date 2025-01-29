@@ -38,7 +38,7 @@ export default function Search() {
     return (
         <div className={'main-container flex flex-col w-full'}>
             <div className={'mb-10'}>
-                <h1 className={'font-bold text-lg md:text-2xl'}>{params.get('search') !== null ? 'Wyniki wyszukiwania dla: '+ params.get('search') : 'Kategoria: ' + category} </h1>
+                <h1 className={'font-bold text-lg md:text-2xl'}>{params.get('search') !== null ? 'Search results for: '+ params.get('search') : 'Category: ' + category} </h1>
                 <p>{params.get('q')}</p>
             </div>
             <ProductList products={products}/>

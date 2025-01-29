@@ -70,7 +70,7 @@ router.get('/:id', authenticateJWT, (req, res) => {
     return res.status(403).send('You can only access your own information.');
   }
 
-  db.get(`SELECT * FROM Users WHERE UserID = ?;`, [userId], (err, user) => {
+  db.get(`SELECT UserID,Email, FirstName, LastName, Address, Phone, Role FROM Users WHERE UserID = ?;`, [userId], (err, user) => {
     if (err) {
       return res.status(500).send('Error retrieving user.');
     }

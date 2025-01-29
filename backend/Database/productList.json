@@ -2,9 +2,9 @@
   {
     "id": 1,
     "title": "Adidas torba sportowa tiro league duffel m 39 5 l hs9749 czarna",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 84,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/adidas-torba-sportowa-tiro-league-duffel-m-39-5-l-hs9749-czarna-b-iext173458043.jpg.webp",
     "ratings": []
@@ -12,9 +12,9 @@
   {
     "id": 2,
     "title": "angielski w tlumaczeniach gramatyka komplet",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 32,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/angielski-w-tlumaczeniach-gramatyka-komplet-b-iext169143856.webp",
     "ratings": []
@@ -22,9 +22,9 @@
   {
     "id": 3,
     "title": "Apple macbook air m2 chip 2023 - 15.3 inch retina",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 4999.99,
-    "stock": 0,
+    "stock": 72,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/apple-macbook-air-2023-m2-chip-8-cpu-10-gpu-256gb-8gb-15-3-2880x1864-retina-b-iext144351294.webp",
     "ratings": []
@@ -32,9 +32,9 @@
   {
     "id": 4,
     "title": "assassin's creed shadows - edycja kolekcjonerska",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 199.99,
-    "stock": 0,
+    "stock": 86,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/assassin-s-creed-shadows-edycja-kolekcjonerska-pc-b-iext174621110.webp",
     "ratings": []
@@ -42,9 +42,9 @@
   {
     "id": 5,
     "title": "Asus d515da ej1397 15 6 ryzen 3 8gb 256gb w10pro",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 35,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/asus-d515da-ej1397-15-6-ryzen-3-8gb-256gb-w10pro-b-iext130258844.webp",
     "ratings": []
@@ -52,9 +52,9 @@
   {
     "id": 6,
     "title": "atomowe nawyki drobne zmiany niezwykle efekty",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 2,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/atomowe-nawyki-drobne-zmiany-niezwykle-efekty-b-iext172232280.webp",
     "ratings": []
@@ -62,9 +62,9 @@
   {
     "id": 7,
     "title": "długopis bic round stick - 8 sztuk",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 19.99,
-    "stock": 0,
+    "stock": 93,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/bic-dlugopis-round-stick-niebieski-pouch-8-sztuk-b-iext171325058.webp",
     "ratings": []
@@ -72,9 +72,9 @@
   {
     "id": 8,
     "title": "bieznia domowa elektryczna lcd skladana funfit z pilotem v2",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 92,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/bieznia-domowa-elektryczna-lcd-skladana-funfit-z-pilotem-v2-b-iext140546326.jpg.webp",
     "ratings": []
@@ -82,9 +82,9 @@
   {
     "id": 9,
     "title": "Brita butelka + 4 filtry microdisc - 600ml",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 89.99,
-    "stock": 0,
+    "stock": 28,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/brita-butelka-4-filtry-do-wody-microdisk-niebieski-600ml-b-iext168383210.webp",
     "ratings": []
@@ -92,9 +92,9 @@
   {
     "id": 10,
     "title": "burnout paradise remastered nintendo switch",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 85,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/burnout-paradise-remastered-nintendo-switch-b-iext162090978.webp",
     "ratings": []
@@ -102,9 +102,9 @@
   {
     "id": 11,
     "title": "cisza trzy siostry tom 3",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 15,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/cisza-trzy-siostry-tom-3-b-iext174521702.webp",
     "ratings": []
@@ -112,9 +112,9 @@
   {
     "id": 12,
     "title": "classic rainbow fashion doll amaya rainbow",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 63,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/classic-rainbow-fashion-doll-amaya-rainbow-b-iext171321958.webp",
     "ratings": []
@@ -122,9 +122,9 @@
   {
     "id": 13,
     "title": "Dell alienware aw3423dwf",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 63,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/dell-alienware-aw3423dwf-b-iext149883057.webp",
     "ratings": []
@@ -132,9 +132,9 @@
   {
     "id": 14,
     "title": "długopis bic round stick - 8 sztuk",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 19.99,
-    "stock": 0,
+    "stock": 53,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/dlugopis-czarny-bic-round-stic-classic-pouch-8szt-b-iext171325064.webp",
     "ratings": []
@@ -142,9 +142,9 @@
   {
     "id": 15,
     "title": "długopis bic round stick - 8 sztuk",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 19.99,
-    "stock": 0,
+    "stock": 2,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/dlugopis-parker-im-premium-black-gt-1931667-b-iext172562691.webp",
     "ratings": []
@@ -152,9 +152,9 @@
   {
     "id": 16,
     "title": "donkey kong country returns hd",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 14,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/donkey-kong-country-returns-hd-b-iext174546549.webp",
     "ratings": []
@@ -162,9 +162,9 @@
   {
     "id": 17,
     "title": "drewniany organizer na biurko",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 24,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/drewniany-organizer-na-biurko-b-iext138250500.webp",
     "ratings": []
@@ -172,9 +172,9 @@
   {
     "id": 18,
     "title": "ea sports fc 25 ps5",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 65,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/ea-sports-fc-25-ps5-b-iext172973116.webp",
     "ratings": []
@@ -182,9 +182,9 @@
   {
     "id": 19,
     "title": "empik gobook 3 0 kod empik go max na 30 dni",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 97,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/empik-gobook-3-0-kod-empik-go-max-na-30-dni-b-iext172535206.webp",
     "ratings": []
@@ -192,9 +192,9 @@
   {
     "id": 20,
     "title": "garnek do gotowania na parze florina stima 20 cm 4 elementy",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/garnek-do-gotowania-na-parze-florina-stima-20-cm-4-elementy-b-iext171243089.webp",
     "ratings": []
@@ -202,9 +202,9 @@
   {
     "id": 21,
     "title": "ile mozesz wypic o nalogach i ich leczeniu",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 21,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/ile-mozesz-wypic-o-nalogach-i-ich-leczeniu-b-iext146749111.webp",
     "ratings": []
@@ -212,9 +212,9 @@
   {
     "id": 22,
     "title": "inhalator dla dzieci i doroslych medel professional",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 38,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/inhalator-dla-dzieci-i-doroslych-medel-professional-b-iext65829238.webp",
     "ratings": []
@@ -222,9 +222,9 @@
   {
     "id": 23,
     "title": "inhalator pneumatyczny dla dzieci i doroslych flaem 4neb bialy",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 92,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/inhalator-pneumatyczny-dla-dzieci-i-doroslych-flaem-4neb-bialy-b-iext168579293.webp",
     "ratings": []
@@ -232,9 +232,9 @@
   {
     "id": 24,
     "title": "instax fujifilm zestaw aparat do fotografii natychmiastowej mini 12 rozowy wklady 20 szt",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 80,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/instax-fujifilm-zestaw-aparat-do-fotografii-natychmiastowej-mini-12-rozowy-wklady-20-szt-b-iext163221650.jpg.webp",
     "ratings": []
@@ -242,9 +242,9 @@
   {
     "id": 25,
     "title": "interdruk zakladki indeksujace z linijka 8 kolorow",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 97,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/interdruk-zakladki-indeksujace-z-linijka-8-kolorow-b-iext171332289.webp",
     "ratings": []
@@ -252,9 +252,9 @@
   {
     "id": 26,
     "title": "kambukka kubek termiczny olympus aurora pink 500 ml",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 40,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kambukka-kubek-termiczny-olympus-aurora-pink-500-ml-b-iext162768323.jpg.webp",
     "ratings": []
@@ -262,9 +262,9 @@
   {
     "id": 27,
     "title": "karategi overlord karate kyokushin biale 901120 170",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 80,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/karategi-overlord-karate-kyokushin-biale-901120-170-b-iext124317166.jpg.webp",
     "ratings": []
@@ -272,9 +272,9 @@
   {
     "id": 28,
     "title": "kefeya s3 14 1 przenosny monitor 1080p fhd pc xbox ps4 5 switch mac laptop",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 35,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/kefeya-s3-14-1-przenosny-monitor-1080p-fhd-pc-xbox-ps4-5-switch-mac-laptop-b-iext167477545.webp",
     "ratings": []
@@ -282,9 +282,9 @@
   {
     "id": 29,
     "title": "kingdom come deliverance ii zlota edycja steelbook",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 24,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kingdom-come-deliverance-ii-zlota-edycja-steelbook-b-iext171501206.webp",
     "ratings": []
@@ -292,9 +292,9 @@
   {
     "id": 30,
     "title": "koncowka do szczoteczek philips sonicare w optimal white hx6064 10 4 szt",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 17,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/koncowka-do-szczoteczek-philips-sonicare-w-optimal-white-hx6064-10-4-szt-b-iext171177986.webp",
     "ratings": []
@@ -302,9 +302,9 @@
   {
     "id": 31,
     "title": "kontroler bezprzewodowy Sony dualsense bialy v2",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 89,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kontroler-bezprzewodowy-sony-dualsense-bialy-v2-b-iext174231631.webp",
     "ratings": []
@@ -312,9 +312,9 @@
   {
     "id": 32,
     "title": "kontroler bezprzewodowy Sony dualsense fortnite limited edition",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 71,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kontroler-bezprzewodowy-sony-dualsense-fortnite-limited-edition-b-iext169133852.webp",
     "ratings": []
@@ -322,9 +322,9 @@
   {
     "id": 33,
     "title": "kubek termiczny ambition love kotam cie 400 ml",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 50,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kubek-termiczny-ambition-love-kotam-cie-400-ml-b-iext171325223.webp",
     "ratings": []
@@ -332,9 +332,9 @@
   {
     "id": 34,
     "title": "kubek termiczny zojirushi sm pd20 gm 200 ml szalwiowy",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 94,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/kubek-termiczny-zojirushi-sm-pd20-gm-200-ml-szalwiowy-b-iext139988259.jpg.webp",
     "ratings": []
@@ -342,9 +342,9 @@
   {
     "id": 35,
     "title": "kukirin hulajnoga elektryczna siedzisko g2 max 20ah 1000 w",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 59,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/kukirin-hulajnoga-elektryczna-siedzisko-g2-max-20ah-1000-w-b-iext163549502.jpg.webp",
     "ratings": []
@@ -352,9 +352,9 @@
   {
     "id": 36,
     "title": "laser wskaznik laserowy zielony duzy zasieg i moc",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 86,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/laser-wskaznik-laserowy-zielony-duzy-zasieg-i-moc-b-iext150467979.webp",
     "ratings": []
@@ -362,9 +362,9 @@
   {
     "id": 37,
     "title": "Lego botanical decorative dracaena",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 259.99,
-    "stock": 0,
+    "stock": 9,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/lego-botanicals-klocki-dekoracyjna-roslina-dracena-sandera-10344-b-iext174621126.webp",
     "ratings": []
@@ -372,9 +372,9 @@
   {
     "id": 38,
     "title": "Lego botanical decorative dracaena",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 259.99,
-    "stock": 0,
+    "stock": 100,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/lego-creator-3-w-1-psotny-kot-31163-b-iext174620815.webp",
     "ratings": []
@@ -382,9 +382,9 @@
   {
     "id": 39,
     "title": "Lego botanical decorative dracaena",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 259.99,
-    "stock": 0,
+    "stock": 31,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/lego-minifigures-klocki-seria-27-71048-b-iext174516549.webp",
     "ratings": []
@@ -392,9 +392,9 @@
   {
     "id": 40,
     "title": "Lenovo v15 g4 core i5 13420h 15 6 fhd 16gb 512gb win11pro",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/lenovo-v15-g4-core-i5-13420h-15-6-fhd-16gb-512gb-win11pro-b-iext144348407.webp",
     "ratings": []
@@ -402,9 +402,9 @@
   {
     "id": 41,
     "title": "little kitty big city",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 31,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/little-kitty-big-city-b-iext174541446.webp",
     "ratings": []
@@ -412,9 +412,9 @@
   {
     "id": 42,
     "title": "metalowa kasetka gigant sejf pieniadze 30cm klucz malatec",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 76,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/metalowa-kasetka-gigant-sejf-pieniadze-30cm-klucz-malatec-b-iext135001363.webp",
     "ratings": []
@@ -422,9 +422,9 @@
   {
     "id": 43,
     "title": "mojipops tree house",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 84,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/mojipops-tree-house-b-iext171321920.webp",
     "ratings": []
@@ -432,9 +432,9 @@
   {
     "id": 44,
     "title": "monitor philips 272v8la 27 va hdmi dp glosniki",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 30,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/monitor-philips-272v8la-27-va-hdmi-dp-glosniki-b-iext76166257.webp",
     "ratings": []
@@ -442,9 +442,9 @@
   {
     "id": 45,
     "title": "monopoly classic gra planszowa nowe wydanie c1009",
-    "description": "",
+    "description": "Oferuje świetną wydajność i trwałość.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 64,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/monopoly-classic-gra-planszowa-nowe-wydanie-c1009-b-iext165624812.webp",
     "ratings": []
@@ -452,9 +452,9 @@
   {
     "id": 47,
     "title": "nic mnie nie zlamie zapanuj nad swoim umyslem i pokonaj przeciwnosci losu",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 44,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/nic-mnie-nie-zlamie-zapanuj-nad-swoim-umyslem-i-pokonaj-przeciwnosci-losu-b-iext172232004.webp",
     "ratings": []
@@ -462,9 +462,9 @@
   {
     "id": 48,
     "title": "Nike torba sportowa academy team - czerwona",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 149.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/nike-torba-sportowa-academy-team-duffel-bag-l-cu8089-657-czerwona-b-iext72266633.jpg.webp",
     "ratings": []
@@ -472,9 +472,9 @@
   {
     "id": 49,
     "title": "Nike torba sportowa academy team - czerwona",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 149.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/nike-torba-sportowa-brasilia-9-5-xs-25-l-dm3977-010-czarna-b-iext167802734.jpg.webp",
     "ratings": []
@@ -482,9 +482,9 @@
   {
     "id": 50,
     "title": "notes a5 w kropki zamykany na gumke czarny romantyzm antra",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 96,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/notes-a5-w-kropki-zamykany-na-gumke-czarny-romantyzm-antra-b-iext167937539.webp",
     "ratings": []
@@ -492,9 +492,9 @@
   {
     "id": 51,
     "title": "patelnia Tefal emotion 28cm",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 72,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/patelnia-tefal-emotion-28cm-b-iext167910526.webp",
     "ratings": []
@@ -502,9 +502,9 @@
   {
     "id": 52,
     "title": "piornik szkolny saszeta do szkoly dla dziewczynki duzy trzykomorowy rozowy",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 71,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/piornik-szkolny-saszeta-do-szkoly-dla-dziewczynki-duzy-trzykomorowy-rozowy-b-iext159935478.webp",
     "ratings": []
@@ -512,9 +512,9 @@
   {
     "id": 53,
     "title": "pistolet do masazu masazer gun mocny do ciala plecow wibracyjny 12 koncowek malatec",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 1,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/pistolet-do-masazu-masazer-gun-mocny-do-ciala-plecow-wibracyjny-12-koncowek-malatec-b-iext146324282.jpg.webp",
     "ratings": []
@@ -522,9 +522,9 @@
   {
     "id": 54,
     "title": "plecak szkolny dla chlopca star wars granatowy coolpack",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 9,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/plecak-szkolny-dla-chlopca-star-wars-granatowy-coolpack-b-iext160323419.webp",
     "ratings": []
@@ -532,9 +532,9 @@
   {
     "id": 55,
     "title": "Pocketbook 629 verse mist grey",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 56,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/pocketbook-629-verse-mist-grey-b-iext171289221.webp",
     "ratings": []
@@ -542,9 +542,9 @@
   {
     "id": 56,
     "title": "Pocketbook basic lux 4 czarny",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 4,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/pocketbook-basic-lux-4-czarny-b-iext171223664.webp",
     "ratings": []
@@ -552,9 +552,9 @@
   {
     "id": 57,
     "title": "program antywirusowy norton 360 premium 75gb 1rok",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 47,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/program-antywirusowy-norton-360-premium-75gb-1rok-b-iext173530261.webp",
     "ratings": []
@@ -562,9 +562,9 @@
   {
     "id": 58,
     "title": "rowerek treningowy rotor rower rehabilitacyjny trizand",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 35,
     "category_number": 1,
     "imgsrc": "http://localhost:3000/images/rowerek-treningowy-rotor-rower-rehabilitacyjny-trizand-b-iext129246284.jpg.webp",
     "ratings": []
@@ -572,9 +572,9 @@
   {
     "id": 59,
     "title": "rysostwory gra muduko",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 50,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/rysostwory-gra-muduko-b-iext171321457.webp",
     "ratings": []
@@ -582,9 +582,9 @@
   {
     "id": 60,
     "title": "sackboy big adventure pl ps5",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 96,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/sackboy-big-adventure-pl-ps5-b-iext122097879.webp",
     "ratings": []
@@ -592,9 +592,9 @@
   {
     "id": 61,
     "title": "samsung monitor aktywnosci galaxy fit3 amoled 1 6 cala czarny",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 66,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/samsung-monitor-aktywnosci-galaxy-fit3-amoled-1-6-cala-czarny-b-iext170181665.jpg.webp",
     "ratings": []
@@ -602,9 +602,9 @@
   {
     "id": 62,
     "title": "sasaki i miyano tom 4",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 12,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/sasaki-i-miyano-tom-4-b-iext169950016.webp",
     "ratings": []
@@ -612,9 +612,9 @@
   {
     "id": 63,
     "title": "saturator do wody sodastream terra czarny",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 5,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/saturator-do-wody-sodastream-terra-czarny-b-iext128726132.webp",
     "ratings": []
@@ -622,9 +622,9 @@
   {
     "id": 64,
     "title": "sid meier s civilization vii",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 49,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/sid-meier-s-civilization-vii-b-iext172981622.webp",
     "ratings": []
@@ -632,9 +632,9 @@
   {
     "id": 65,
     "title": "Smartfon samsung galaxy a55 5g 8gb 128gb czarny",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 93,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartfon-samsung-galaxy-a55-5g-8gb-128gb-czarny-b-iext147417379.jpg.webp",
     "ratings": []
@@ -642,9 +642,9 @@
   {
     "id": 66,
     "title": "Smartfon samsung galaxy a55 5g 8gb 128gb zolty",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 35,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartfon-samsung-galaxy-a55-5g-8gb-128gb-zolty-b-iext147180859.jpg.webp",
     "ratings": []
@@ -652,9 +652,9 @@
   {
     "id": 67,
     "title": "Smartfon samsung galaxy a55 5g 8gb 256gb czarny",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 72,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartfon-samsung-galaxy-a55-5g-8gb-256gb-czarny-b-iext147423251.jpg.webp",
     "ratings": []
@@ -662,9 +662,9 @@
   {
     "id": 68,
     "title": "Smartwatch garett kids hero pro 4g rozowy",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 2,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartwatch-garett-kids-hero-pro-4g-rozowy-b-iext170323018.webp",
     "ratings": []
@@ -672,9 +672,9 @@
   {
     "id": 69,
     "title": "Smartwatch garett kids rock 4g rt czarny",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 53,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartwatch-garett-kids-rock-4g-rt-czarny-b-iext164051978.webp",
     "ratings": []
@@ -682,9 +682,9 @@
   {
     "id": 70,
     "title": "Smartwatch garett kids rock 4g rt rozowy",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 98,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartwatch-garett-kids-rock-4g-rt-rozowy-b-iext163052303.webp",
     "ratings": []
@@ -692,9 +692,9 @@
   {
     "id": 71,
     "title": "Smartwatch smartband opaska sportowa zegarek m6",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 37,
     "category_number": 3,
     "imgsrc": "http://localhost:3000/images/smartwatch-smartband-opaska-sportowa-zegarek-m6-b-iext145086991.webp",
     "ratings": []
@@ -702,9 +702,9 @@
   {
     "id": 72,
     "title": "splendor gra karciana rebel",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 28,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/splendor-gra-karciana-rebel-b-iext174586537.webp",
     "ratings": []
@@ -712,9 +712,9 @@
   {
     "id": 73,
     "title": "stojak podstawka na ksiazke podporka pod tablet malatec",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 36,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/stojak-podstawka-na-ksiazke-podporka-pod-tablet-malatec-b-iext121830469.webp",
     "ratings": []
@@ -722,9 +722,9 @@
   {
     "id": 74,
     "title": "stylowy mlodziezowy czarny plecak semi line",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 50,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/stylowy-mlodziezowy-czarny-plecak-semi-line-b-iext161662141.webp",
     "ratings": []
@@ -732,9 +732,9 @@
   {
     "id": 75,
     "title": "superfarmer gra planszowa granna",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 82,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/superfarmer-gra-planszowa-granna-b-iext171321578.webp",
     "ratings": []
@@ -742,9 +742,9 @@
   {
     "id": 76,
     "title": "superthings wild tigerbot",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 79,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/superthings-wild-tigerbot-b-iext172624791.webp",
     "ratings": []
@@ -752,9 +752,9 @@
   {
     "id": 77,
     "title": "szczoteczka rotacyjna oral b vitality d100 crossaction black",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 7,
     "imgsrc": "http://localhost:3000/images/szczoteczka-rotacyjna-oral-b-vitality-d100-crossaction-black-b-iext167330908.webp",
     "ratings": []
@@ -762,9 +762,9 @@
   {
     "id": 78,
     "title": "tablica suchoscieralna magnetyczna biala 30x40cm premium expo",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 91,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/tablica-suchoscieralna-magnetyczna-biala-30x40cm-premium-expo-b-iext73039564.webp",
     "ratings": []
@@ -772,9 +772,9 @@
   {
     "id": 79,
     "title": "terminarz 2025 klasyczny tygodniowy bordo b5",
-    "description": "",
+    "description": "Niezastąpiony produkt w Twoim codziennym życiu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 1,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/terminarz-2025-klasyczny-tygodniowy-bordo-b5-b-iext162727481.webp",
     "ratings": []
@@ -782,9 +782,9 @@
   {
     "id": 80,
     "title": "to ja go tne gra towarzyska rabel",
-    "description": "",
+    "description": "Wykonany z wysokiej jakości materiałów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 91,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/to-ja-go-tne-gra-towarzyska-rabel-b-iext163199509.webp",
     "ratings": []
@@ -792,9 +792,9 @@
   {
     "id": 81,
     "title": "toksyczne emocje",
-    "description": "",
+    "description": "Idealny wybór dla osób poszukujących niezawodności i stylu.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 70,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/toksyczne-emocje-b-iext161121191.webp",
     "ratings": []
@@ -802,9 +802,9 @@
   {
     "id": 82,
     "title": "Vileda mop parowy steam plus xxl - czarny",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 399.99,
-    "stock": 0,
+    "stock": 93,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/vileda-mop-parowy-steam-plus-xxl-3-czarny-1550-w-b-iext174519285 (1).webp",
     "ratings": []
@@ -812,9 +812,9 @@
   {
     "id": 83,
     "title": "Vileda mop parowy steam plus xxl - czarny",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 399.99,
-    "stock": 0,
+    "stock": 18,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/vileda-mop-parowy-steam-plus-xxl-3-czarny-1550-w-b-iext174519285.webp",
     "ratings": []
@@ -822,9 +822,9 @@
   {
     "id": 84,
     "title": "wanna wolnostojaca malta 170x80 syfon komplet",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 64,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/wanna-wolnostojaca-malta-170x80-syfon-komplet-b-iext76060058.webp",
     "ratings": []
@@ -832,9 +832,9 @@
   {
     "id": 85,
     "title": "wklad do segregatora a5 50",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 58,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/wklad-do-segregatora-a5-50-b-iext158771432.webp",
     "ratings": []
@@ -842,9 +842,9 @@
   {
     "id": 86,
     "title": "xenoblade chronicles x definitive edition",
-    "description": "",
+    "description": "Najlepsza jakość w przystępnej cenie!",
     "price": 99.99,
-    "stock": 0,
+    "stock": 64,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/xenoblade-chronicles-x-definitive-edition-b-iext171513006.webp",
     "ratings": []
@@ -852,9 +852,9 @@
   {
     "id": 87,
     "title": "długopis bic round stick - 8 sztuk",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 19.99,
-    "stock": 0,
+    "stock": 48,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/zakazany-dlugopis-sciaga-do-sciagania-na-sciagi-szkolny-studia-b-iext163309269.webp",
     "ratings": []
@@ -862,9 +862,9 @@
   {
     "id": 88,
     "title": "zakladka do ksiazki 9160 monstera delciosa",
-    "description": "",
+    "description": "Produkt rekomendowany przez naszych klientów.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 28,
     "category_number": 6,
     "imgsrc": "http://localhost:3000/images/zakladka-do-ksiazki-9160-monstera-delciosa-b-iext146047489.webp",
     "ratings": []
@@ -872,9 +872,9 @@
   {
     "id": 89,
     "title": "zakrety zycia rozmowy o milosci depresji nalogach i odnajdywaniu siebie",
-    "description": "",
+    "description": "Doskonały pomysł na prezent dla bliskiej osoby.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 10,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/zakrety-zycia-rozmowy-o-milosci-depresji-nalogach-i-odnajdywaniu-siebie-b-iext172866852.webp",
     "ratings": []
@@ -882,9 +882,9 @@
   {
     "id": 90,
     "title": "zelazko parowe Tefal ultimate pure fv9845",
-    "description": "",
+    "description": "Produkt spełniający najwyższe standardy jakości.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 58,
     "category_number": 5,
     "imgsrc": "http://localhost:3000/images/zelazko-parowe-tefal-ultimate-pure-fv9845-b-iext173639940.webp",
     "ratings": []
@@ -892,9 +892,9 @@
   {
     "id": 91,
     "title": "zestaw czytnik e bookow calypso plus black etui kod empik go 30 dni",
-    "description": "",
+    "description": "Wysokiej jakości produkt dostępny w naszym sklepie.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 95,
     "category_number": 2,
     "imgsrc": "http://localhost:3000/images/zestaw-czytnik-e-bookow-calypso-plus-black-etui-kod-empik-go-30-dni-b-iext140083826.webp",
     "ratings": []
@@ -902,9 +902,9 @@
   {
     "id": 92,
     "title": "zestaw nozy fiskars 5 elementow",
-    "description": "",
+    "description": "Nowoczesny design i doskonała funkcjonalność.",
     "price": 99.99,
-    "stock": 0,
+    "stock": 28,
     "category_number": 4,
     "imgsrc": "http://localhost:3000/images/zestaw-nozy-fiskars-5-elementow-b-iext168329904.webp",
     "ratings": []

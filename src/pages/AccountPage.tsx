@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function AccountPage() {
     const [user, setUser] = useState<any | null>(null);
@@ -8,6 +9,8 @@ export default function AccountPage() {
     const [successMessage, setSuccessMessage] = useState<string | null>(null); // Wiadomość o powodzeniu
     const [passwordError, setPasswordError] = useState<string | null>(null); // Błędy zmiany hasła
 
+    const navigator = useNavigate();
+
     useEffect(() => {
         const fetchUserData = async () => {
             const token = localStorage.getItem("token");
@@ -15,6 +18,7 @@ export default function AccountPage() {
 
             if (!token || !storedUser) {
                 setError("You need to log in to view this page.");
+                navigator("/login");
                 return;
             }
 
@@ -34,6 +38,7 @@ export default function AccountPage() {
                 } else {
                     const errorText = await response.text();
                     setError(errorText || "Failed to fetch user data.");
+                    localStorage.removeItem("token");
                 }
             } catch (err) {
                 console.error("Error fetching user data:", err);

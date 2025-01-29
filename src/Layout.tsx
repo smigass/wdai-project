@@ -10,13 +10,14 @@ export default function Layout() {
     const token = localStorage.getItem('token');
     if (token) {
         const decoded = jwtDecode(token);
+        if (!decoded) return
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         if (Date.now() >= decoded.exp * 1000) {
             localStorage.removeItem('token');
             localStorage.removeItem('currentUser');
         }
         localStorage.setItem('currentUser', JSON.stringify(decoded));
-        console.log('decoded');
-        console.log(decoded);
     } else{
         localStorage.removeItem('currentUser');
     }
