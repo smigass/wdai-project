@@ -5,10 +5,16 @@ import {OrderForm} from "../components/Orders/OrderForm.tsx";
 export default function OrderPage(){
 
     const [cart, setCart] = useState<CartItem[]>([]);
+    const [price, setPrice] = useState(0);
 
     useEffect(() => {
         fetchCart()
     }, []);
+
+    useEffect(() => {
+        console.log(cart)
+        setPrice(cart.reduce((acc, product) => acc + product.TotalPrice, 0))
+    }, [cart]);
 
 
     const fetchCart = async () => {
@@ -32,7 +38,7 @@ export default function OrderPage(){
                 </div>
                 <div className={'lg:w-[50%] flex flex-col items-end'}>
                     <h2 className={'md:ml-6 self-start text-lg font-main font-bold'}>Order details</h2>
-                    <OrderForm/>
+                    <OrderForm totalPrice={price} cart={cart}/>
                 </div>
             </div>
         </div>

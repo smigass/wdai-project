@@ -9,7 +9,9 @@ export default function MenuLinks() {
             <Link to={'/about'}>
                 <li className={'p-4 cursor-pointer hover:underline underline-offset-4'}>About us</li>
             </Link>
-            <li className={'p-4 cursor-pointer hover:underline underline-offset-4'}>FAQ</li>
+            <Link to={'/orders'}>
+                <li className={'p-4 cursor-pointer hover:underline underline-offset-4'}>Orders</li>
+            </Link>
         </>
     )
 }

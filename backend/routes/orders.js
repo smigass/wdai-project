@@ -99,6 +99,7 @@ router.put('/:orderId', authenticateJWT, (req, res) => {
 //Dodanie szczegółów zamówienia
 router.post('/details', authenticateJWT, (req, res) => {
   const { orderId, productId, quantity } = req.body;
+    console.log(req.body);
 
   if (!orderId || !productId || !quantity) {
       return res.status(400).json({ error: 'All fields are required' });
@@ -112,6 +113,12 @@ router.post('/details', authenticateJWT, (req, res) => {
       }
       res.status(201).send('Order detail added successfully');
   });
+
+  db.run("DELETE FROM Carts WHERE UserID = ?", [req.user.userId], function (err){
+    if (err) {
+        console.log(err)
+    }
+  })
 });
 
 //Pobranie szczegółów zamówienia

@@ -17,7 +17,7 @@ export default function SingleProduct({product}: SingleProductProps) {
                 </div>
                 <div className={'flex flex-col w-full justify-between'}>
                     <h1 className={'font-bold text-xl'}>{product.Name}</h1>
-                    <div className={'flex  w-full justify-between'}>
+                    <div className={'flex  w-full justify-end p-2'}>
                         <p className={'text-lg'}>{product.Price}zł</p>
                     </div>
 
