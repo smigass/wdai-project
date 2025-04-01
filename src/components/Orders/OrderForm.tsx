@@ -1,6 +1,10 @@
 import {useContext, useEffect, useState} from "react";
 import {UserContext} from "../../context/UserContext.tsx";
-
+import {CartItem} from "./ProductsSummary.tsx";
+interface ordersProps {
+    totalPrice: number
+    cart: CartItem[]
+}
 interface UserDetails {
     UserID: number
     Email: string
@@ -11,10 +15,10 @@ interface UserDetails {
     Role: string
 }
 
-export const OrderForm = () => {
+export const OrderForm = ({totalPrice, cart}: ordersProps) => {
     const user = useContext(UserContext);
     const [userDetails, setUserDetails] = useState<UserDetails>();
-
+    const [orderID, setOrderID] = useState<number>(0);
     const fetchUser = async () => {
         const response = await fetch('http://localhost:3000/users/' + user.user?.userId, {
             method: 'GET',
@@ -29,14 +33,46 @@ export const OrderForm = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        alert('Order placed successfully');
+        fetch('http://localhost:3000/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': `Bearer ${localStorage.getItem('token')}`
+            },
+            body: JSON.stringify({
+                totalPrice: totalPrice,
+                orderDate: new Date(),
+            })
+        }).then(r => r.json())
+            .then(data => {
+                for (const product of cart) {
+                    setOrderDetails(data.orderId, product.ProductID, product.Quantity)
+                }
+                window.location.reload();
+            })
+    }
+
+
+    const setOrderDetails = async (orderID: number, productID: number, quantity:number) => {
+        await fetch('http://localhost:3000/orders/details', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': `Bearer ${localStorage.getItem('token')}`
+            },
+            body: JSON.stringify({
+                orderId: orderID,
+                productId: productID,
+                quantity: quantity
+            })
+        })
     }
 
     useEffect(() => {
         if (user.user !== null) {
             fetchUser();
         }
-    }, []);
+    }, [user]);
 
     return (
         <form onSubmit={handleSubmit} className={'md:pl-6 md:pt-5 w-[100%] flex flex-col gap-y-3'}>
