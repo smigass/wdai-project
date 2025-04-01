@@ -4,87 +4,57 @@ This repository contains the project created as part of the “Introduction to W
 
 # wdai-project
 
-## Opis projektu
-MPick to sklep internetowy umożliwiający użytkownikom przeglądanie oraz zakup produktów online. Projekt wykorzystuje nowoczesne technologie webowe, zapewniając wysoką wydajność i responsywność.
+## Project Description
+MPick is an online store that allows users to browse and purchase products online. The project uses modern web technologies, ensuring high performance and responsiveness.
 
-## Instalacja projektu
+**Note:** This project is currently intended for local use only. It was created only for academic purposes as a final project for the “Introduction to Web Applications” course at AGH University of Science and Technology.
 
-### Instalacja projektu
+## Project Installation
 
-1. Upewnij się, że masz zainstalowanego Node.js (zalecana wersja: 16.x lub nowsza).
-2. Sklonuj repozytorium lub pobierz projekt.
-3. W terminalu przejdź do katalogu projektu i wykonaj:
+### Installation Steps
+
+1. Make sure you have Node.js installed (recommended version: 16.x or newer).
+2. Clone the repository or download the project.
+3. In the terminal, navigate to the project directory and run:
 
 ```bash
 npm install
 ```
 
-4. Aby uruchomić projekt w trybie deweloperskim:
+4. To run the project in development mode:
 
 ```bash
 npm run dev
 ```
 
-5. Aby wygenerować wersję produkcyjną:
-
+5. To run backend express.js server
 ```bash
-npm run build
+node backend/app.js
 ```
 
+## Technologies and Libraries Used
 
-## Użyte technologie i biblioteki
-
-Projekt wykorzystuje następujące technologie:
+The project uses the following technologies:
 
 - **Frontend:** HTML, CSS (Tailwind CSS), TypeScript
 - **Backend:** Node.js, Express.js
-- **Baza danych:** SQLite
+- **Database:** SQLite
 
-Zainstalowane zależności:
+## Features
 
-```
-bcrypt: ^5.1.1
-cors: ^2.8.5
-express: ^4.21.2
-jsonwebtoken: ^9.0.2
-jwt-decode: ^4.0.0
-react: ^18.3.1
-react-dom: ^18.3.1
-react-icons: ^5.4.0
-react-router: ^7.1.0
-react-router-dom: ^7.1.3
-sqlite3: ^5.1.7
-@eslint/js: ^9.17.0
-@types/react: ^18.3.17
-@types/react-dom: ^18.3.5
-@vitejs/plugin-react: ^4.3.4
-autoprefixer: ^10.4.20
-eslint: ^9.17.0
-eslint-plugin-react-hooks: ^5.0.0
-eslint-plugin-react-refresh: ^0.4.16
-gh-pages: ^6.2.0
-globals: ^15.13.0
-postcss: ^8.4.49
-tailwindcss: ^3.4.17
-typescript: ~5.6.2
-typescript-eslint: ^8.18.1
-vite: ^6.0.3
-```
+- Browsing products
+- Filtering products
+- Searching for products
+- Adding products to the cart and checking its contents
+- Placing orders and accessing their details
+- Adding reviews and ratings for products
+- Recommendations such as bestsellers and newest products
+- Newsletter subscription
+- User management
+- User authentication and registration, including password reset
 
-## Funkcjonalności
-
-- Przeglądanie produktów
-- Filtrowanie produktów
-- Wyszukiwanie produktów
-- Dodawanie produktów do koszyka i sprawdzanie jego zawartości
-- Składanie zamówień, dostęp do ich szczegółów
-- Dodawanie opinii i ocen dla produktu
-- Rekomendacje typu bestsellers, newest
-- Subskrypcja Newslettera
-- Zarządzanie użytkownikami
-- Autoryzacja i rejestracja użytkowników, możliwość resetu hasła
-
-## Autorzy
+## 
+## Authors
 - Szymon Migas
 - Emil Siatka
 - Kacper Wdowiak
